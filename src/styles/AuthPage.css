@@ -1,0 +1,61 @@
+/* Styles for authentication pages (login and signup) */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-page {
+    background-image: url('/images/login-bg.jpg');
+  }
+  
+  .signup-page {
+    background-image: url('/images/signup-bg.jpg');
+  }
+  
+  .auth-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .auth-page h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .auth-page form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-page label {
+    margin: 10px 0 5px;
+  }
+  
+  .auth-page input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .auth-page button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .auth-page button:hover {
+    background-color: #555;
+  }
+  
