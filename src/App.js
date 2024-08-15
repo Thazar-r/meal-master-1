@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import LoginPage from './pages/LoginPage'; // Ensure this path is correct
-import SignupPage from './pages/SignupPage'; // Ensure this path is correct
-import HomePage from './pages/HomePage'; // Ensure this path is correct
-import RecipeList from './components/RecipeList'; // Ensure this path is correct
-import RecipeDetail from './components/RecipeDetail'; // Ensure this path is correct
-import FeedbackForm from './components/FeedbackForm'; // Ensure this path is correct
-import Calendar from './components/Calendar'; // Ensure this path is correct
-import PrivateRoute from './utils/PrivateRoute'; // Ensure this path is correct
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import HomePage from './pages/HomePage';
+import RecipeList from './components/RecipeList';
+import RecipeDetail from './components/RecipeDetail';
+import FeedbackForm from './components/FeedbackForm';
+import Calendar from './components/Calendar'; 
+import PrivateRoute from './utils/PrivateRoute';
 
 const App = () => (
   <Router>
