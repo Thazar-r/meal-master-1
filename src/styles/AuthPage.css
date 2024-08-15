@@ -1,61 +1,60 @@
 /* Styles for authentication pages (login and signup) */
 .auth-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .login-page {
-    background-image: url('/images/login-bg.jpg');
-  }
-  
-  .signup-page {
-    background-image: url('/images/signup-bg.jpg');
-  }
-  
-  .auth-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .auth-page h1 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .auth-page form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .auth-page label {
-    margin: 10px 0 5px;
-  }
-  
-  .auth-page input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .auth-page button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .auth-page button:hover {
-    background-color: #555;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-page {
+  background-image: url('https://images.unsplash.com/photo-1600854931527-ef732e0cf2b2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fG1lYWwlMjBsaWZlfGVufDB8fHx8MTY4NDAxMTk1Mw&ixlib=rb-1.2.1&q=80&w=1080');
+}
+
+.signup-page {
+  background-image: url('https://images.unsplash.com/photo-1584406573478-512af07f7ef9?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIxfHxibGFuY2VzcyUyMG1lYWx8ZW58MHx8fDE2ODQwMTE3MTk&ixlib=rb-1.2.1&q=80&w=1080');
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-page h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page label {
+  margin: 10px 0 5px;
+}
+
+.auth-page input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-page button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.auth-page button:hover {
+  background-color: #555;
+}

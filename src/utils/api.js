@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001'; // URL of your mock server or API
+const API_URL = 'http://localhost:3000'; // URL of your mock server or API
 
 const fetchFromApi = async (endpoint, options = {}) => {
   const response = await fetch(`${API_URL}/${endpoint}`, options);

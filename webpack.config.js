@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -18,22 +16,24 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|jpeg|gif)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name].[ext]',
-              context: 'src',
+              name: '[name].[ext]',
+              outputPath: 'images/',
             },
           },
         ],
       },
     ],
   },
+  resolve: {
+    extensions: ['.js'],
+  },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
-    compress: true,
+    static: path.join(__dirname, 'dist'),
     port: 3000,
   },
 };

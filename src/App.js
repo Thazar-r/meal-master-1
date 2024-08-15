@@ -1,26 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Home from './components/Home';
-import RecipeList from './components/RecipeList';
-import RecipeDetail from './components/RecipeDetail';
-import FeedbackForm from './components/FeedbackForm';
-import Calendar from './components/Calendar';
-import PrivateRoute from './utils/PrivateRoute';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import LoginPage from './pages/LoginPage'; // Ensure this path is correct
+import SignupPage from './pages/SignupPage'; // Ensure this path is correct
+import HomePage from './pages/HomePage'; // Ensure this path is correct
+import RecipeList from './components/RecipeList'; // Ensure this path is correct
+import RecipeDetail from './components/RecipeDetail'; // Ensure this path is correct
+import FeedbackForm from './components/FeedbackForm'; // Ensure this path is correct
+import Calendar from './components/Calendar'; // Ensure this path is correct
+import PrivateRoute from './utils/PrivateRoute'; // Ensure this path is correct
 
 const App = () => (
   <Router>
-    <Switch>
-      <Route path="/login" exact component={Login} />
-      <Route path="/signup" exact component={Signup} />
-      <PrivateRoute path="/home" exact component={Home} />
-      <PrivateRoute path="/recipes" exact component={RecipeList} />
-      <PrivateRoute path="/recipe/:id" exact component={RecipeDetail} />
-      <PrivateRoute path="/feedback" exact component={FeedbackForm} />
-      <PrivateRoute path="/calendar" exact component={Calendar} />
-      <Redirect from="/" to="/home" />
-    </Switch>
+    <Routes>
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/signup" element={<SignupPage />} />
+      <Route path="/home" element={<PrivateRoute element={<HomePage />} />} />
+      <Route path="/recipes" element={<PrivateRoute element={<RecipeList />} />} />
+      <Route path="/recipe/:id" element={<PrivateRoute element={<RecipeDetail />} />} />
+      <Route path="/feedback" element={<PrivateRoute element={<FeedbackForm />} />} />
+      <Route path="/calendar" element={<PrivateRoute element={<Calendar />} />} />
+      <Route path="/" element={<Navigate to="/home" />} />
+    </Routes>
   </Router>
 );
 

@@ -1,11 +1,9 @@
 import React from 'react';
-import '../styles/HomePage.css'; // Adjust the path as necessary
-import RecipeList from '../components/RecipeList'; // Adjust the path as necessary
-import RecipeSearch from '../components/RecipeSearch'; // Adjust the path as necessary
+import RecipeList from '../components/RecipeList'; // Ensure this path is correct
+import RecipeSearch from '../components/RecipeSearch'; // Ensure this path is correct
 
 const HomePage = () => {
-  // Sample state for recipes - replace with actual data fetching logic
-  const [recipes, setRecipes] = React.useState([]);
+  const [recipes] = React.useState([]); // Removed setRecipes as it's not used
 
   const handleSearch = (query) => {
     // Logic for searching recipes
